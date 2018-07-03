@@ -34,6 +34,7 @@
                             href="car_select.jsp" class="a1">车辆信息</a>&nbsp;|&nbsp;<a
                             href="enterprise_select.jsp" class="a1">企业信息</a>&nbsp;|&nbsp;<a
                             href="tool_assistant.jsp" class="a1">辅助工具</a>&nbsp;|&nbsp;<a
+                            href="Manager/index.jsp" class="a1">管理</a>&nbsp;|&nbsp;<a
                             href="logout.jsp" class="a1">退出</a></th>
                 </tr>
             </table>

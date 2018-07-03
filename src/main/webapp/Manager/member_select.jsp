@@ -26,16 +26,16 @@
         <td height="54" colspan="10" align="center">会员资料信息修改</td>
     </tr>
     <tr>
-        <td width="8%" height="16" align="center">ID</td>
-        <td width="11%" height="16" align="center">名字</td>
-
-        <td width="13%" height="16" align="center">Email</td>
+        <td width="6%" height="16" align="center">ID</td>
+        <td width="10%" height="16" align="center">名字</td>
+        <td width="12%" height="16" align="center">Email</td>
         <td width="9%" height="16" align="center">性别</td>
         <td width="11%" height="16" align="center">电话</td>
         <td width="14%" height="16" align="center">问题</td>
         <td width="11%" height="16" align="center">答案</td>
+        <td width="5%" height="16" align="center">权限</td>
         <td width="12%" height="16" align="center">申请日</td>
-        <td width="11%" height="16" align="center">操作</td>
+        <td width="10%" height="16" align="center">操作</td>
     </tr>
     <%
         sql = "select * from tb_Customer";
@@ -67,12 +67,12 @@
             code = rs.getInt("ID");
     %>
     <tr>
-        <td width="8%" height="35" align="center"><%=code%>
+        <td width="6%" height="35" align="center"><%=code%>
         </td>
-        <td width="11%" height="35" align="center"><%=rs.getString("Name")%>
+        <td width="10%" height="35" align="center"><%=rs.getString("Name")%>
         </td>
 
-        <td width="13%" height="35" align="center"><%=rs.getString("Email")%>
+        <td width="12%" height="35" align="center"><%=rs.getString("Email")%>
         </td>
         <td width="9%" height="35" align="center"><%=rs.getString("Sex")%>
         </td>
@@ -81,6 +81,8 @@
         <td width="14%" height="35" align="center"><%=rs.getString("Question")%>
         </td>
         <td width="11%" height="35" align="center"><%=rs.getString("Result")%>
+        </td>
+        <td width="5%" height="35" align="center"><%="admin".equals(rs.getString("pow")) ? "管理" : "" %>
         </td>
         <td width="12%" height="35" align="center"><%=rs.getString("IssueDate")%>
         </td>

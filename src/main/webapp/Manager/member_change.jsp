@@ -143,6 +143,11 @@
                 </td>
             </tr>
             <tr>
+                <td width="100%" height="16">是管理员：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="admin" <%="admin".equals(rs.getString("pow")) ? "checked" : ""%> value="true">
+                </td>
+            </tr>
+            <tr>
                 <td width="100%" height="16">&nbsp;ID&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
                     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
                     <%=code%><input type="hidden" name="code" size="20" value="<%=code%>"></td>

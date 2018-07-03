@@ -20,8 +20,10 @@
         rs = connection.executeQuery(sql);
         if (rs.next()) {
             String Name = rs.getString("Name");
+            String pow = rs.getString("pow");
             session.setAttribute("name", Name);
             session.setAttribute("login", "success");
+            session.setAttribute("pow", pow);
 %>
 <script language="javascript">
     alert("登录成功！！！");

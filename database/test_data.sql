@@ -82,7 +82,7 @@ CREATE TABLE `tb_Customer` (
   `Result` varchar(50) NOT NULL,
   `IssueDate` varchar(50) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +91,7 @@ CREATE TABLE `tb_Customer` (
 
 LOCK TABLES `tb_Customer` WRITE;
 /*!40000 ALTER TABLE `tb_Customer` DISABLE KEYS */;
-INSERT INTO `tb_Customer` VALUES (1,'test','123456',NULL,'example@example.com','man','10086','test','test','2018-07-03');
+INSERT INTO `tb_Customer` VALUES (1,'admin','123456','admin','example@example.com','man','10086','admin','admin','2018-07-04'),(2,'test','123456','','test@haruue.moe','man','10000','test','test','2018-07-04');
 /*!40000 ALTER TABLE `tb_Customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -119,7 +119,7 @@ CREATE TABLE `tb_Enterprise` (
   `IssueDate` varchar(80) DEFAULT NULL,
   `UserName` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -186,7 +186,7 @@ CREATE TABLE `tb_Knowledge` (
   `Author` varchar(50) DEFAULT NULL,
   `IssueDate` datetime NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -213,7 +213,7 @@ CREATE TABLE `tb_Placard` (
   `Author` varchar(20) NOT NULL,
   `IssueDate` datetime NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -262,4 +262,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-07-03 20:22:10
+-- Dump completed on 2018-07-04  0:41:33

@@ -19,10 +19,13 @@
     String result = request.getParameter("result");
     String question = request.getParameter("question");
     java.sql.Date showdate = new java.sql.Date(date.getYear(), date.getMonth(), date.getDate());
+    String[] adminCheckboxValue = request.getParameterValues("admin");
+    boolean isAdmin = adminCheckboxValue != null && adminCheckboxValue.length > 0 && "true".equals(adminCheckboxValue[0]);
     String sql = "update tb_Customer set Name='" + name + "',Password='" +
             password + "',Email='" + email + "',Sex='" + sex + "',Phone='" +
             phone + "',Question='" + question + "',Result='" +
-            result + "',IssueDate='" + showdate + "' where id=" + request.getParameter("code");
+            result + "',IssueDate='" + showdate + "', pow='" + (isAdmin ? "admin" : "") + "' " +
+            "where id=" + request.getParameter("code");
     boolean sert = connection.executeUpdata(sql);
     if (sert) {%>
 <script language="javascript">
