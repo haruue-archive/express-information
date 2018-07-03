@@ -135,7 +135,7 @@
                 <p align="center"><font size="4">起始省份：</font></p></td>
             <td width="36%" height="43">
                 <p align="center"><input type="text" name="startProvince" size="20"
-                                         value="<%=rs.getString("StartOmit")%>"></p>
+                                         value="<%=rs.getString("StartProvince")%>"></p>
             </td>
             <td width="18%" height="43" align="center">
                 <p align="center"><font size="4">起始城市：</font></p></td>
@@ -149,7 +149,7 @@
                 <p align="center"><font size="4">抵达省份：</font></p></td>
             <td width="36%" height="46">
                 <p align="center"><input type="text" name="endProvince" size="20"
-                                         value="<%=rs.getString("EndOmit")%>"></p>
+                                         value="<%=rs.getString("EndProvince")%>"></p>
             </td>
             <td width="18%" height="46" align="center">
                 <p align="center"><font size="4">抵达城市：</font></p></td>

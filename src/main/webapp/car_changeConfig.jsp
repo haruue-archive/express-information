@@ -13,7 +13,7 @@
         String result = null;
         byte temp[];
         try {
-            temp = str.getBytes("iso8859-1");
+            temp = str.getBytes("UTF-8");
             result = new String(temp);
         } catch (UnsupportedEncodingException e) {
             System.out.println(e.toString());
