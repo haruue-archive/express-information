@@ -162,7 +162,7 @@
                     <div align="center">
                         <input type="submit" value="注册" name="Submit" onClick="return check()"> 　
                         <input type="reset" value="重置">
-                        &nbsp;&nbsp;<a href="/logistics/index.jsp">返回</a>
+                        &nbsp;&nbsp;<a href="javascript:history.back()">返回</a>
                     </div>
                 </td>
             </tr>
